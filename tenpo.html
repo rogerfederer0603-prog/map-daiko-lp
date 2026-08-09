@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>店舗向け｜Googleマップ運用代行（月35,000円・作業はすべてこちら）</title>
+<meta name="description" content="Googleマップに登録したまま止まっていませんか。週次投稿・写真掲載・口コミ返信・月次レポートを月35,000円で代行。公開前にオーナー様の承認を通すので、勝手な投稿は一切ありません。">
+<meta property="og:title" content="Googleマップ運用代行">
+<meta property="og:url" content="https://map-daiko.jp/tenpo.html">
+<link rel="canonical" href="https://map-daiko.jp/tenpo.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#252b26;
+  --green:#2f6647;
+  --green-deep:#234d35;
+  --amber:#b9762c;
+  --bg:#fbfaf8;
+  --card:#ffffff;
+  --line:#e7e3da;
+  --muted:#79806f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--bg);line-height:2;font-size:15.5px;padding-bottom:78px}
+a{color:var(--green)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+section{padding:68px 0}
+
+header{position:absolute;top:0;left:0;right:0;z-index:10;padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1040px}
+.logo{font-family:'Noto Serif JP',serif;font-weight:600;font-size:15px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+header nav a{font-size:13px;text-decoration:none;color:#4c5548}
+
+.fv{
+  background:
+    linear-gradient(rgba(251,250,248,.86), rgba(251,250,248,.93) 70%, var(--bg)),
+    url('assets/hero.jpg') center 28%/cover no-repeat;
+  padding:128px 0 76px;
+}
+.fv .wrap{max-width:1040px}
+.fv .kicker{font-size:13px;font-weight:500;letter-spacing:.14em;color:var(--green);margin-bottom:22px}
+.fv h1{font-family:'Noto Serif JP',serif;font-size:32px;font-weight:600;line-height:1.7;letter-spacing:.03em}
+.fv .lead{margin-top:22px;font-size:15.5px;max-width:37em}
+.fv .price-line{margin-top:18px;font-size:15px;font-weight:500;color:var(--green-deep)}
+.fv .cta-row{margin-top:30px}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:15.5px;letter-spacing:.04em;padding:16px 38px;border-radius:6px;min-height:44px}
+.btn:hover{background:var(--green-deep)}
+.micro{margin-top:12px;font-size:12.5px;color:var(--muted)}
+@media(max-width:600px){.fv h1{font-size:25px}}
+
+h2.plain{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:600;line-height:1.7;letter-spacing:.03em;margin-bottom:28px}
+h2.plain small{display:block;font-family:'Noto Sans JP',sans-serif;font-size:12.5px;color:var(--muted);font-weight:400;margin-top:8px}
+
+/* 悩み */
+.pains{list-style:none;display:grid;gap:12px}
+.pains li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 20px 16px 46px;font-size:14.5px;position:relative}
+.pains li::before{content:"";position:absolute;left:20px;top:26px;width:12px;height:1.5px;background:var(--amber)}
+
+/* 再定義 */
+.redefine{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px}
+.redefine h2{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;margin-bottom:14px;letter-spacing:.03em}
+.redefine p{font-size:14.5px}
+.redefine p+p{margin-top:10px}
+
+/* サービス表 */
+.jobs{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+.jobs th,.jobs td{border-bottom:1px solid var(--line);padding:16px 18px;text-align:left;font-size:14.5px;vertical-align:top}
+.jobs th{width:9.5em;font-weight:500;color:var(--green-deep);background:#f6f4ee;white-space:nowrap}
+.jobs tr:last-child th,.jobs tr:last-child td{border-bottom:none}
+
+/* サンプル */
+.sample-note{font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.gbp-post{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;max-width:500px}
+.gbp-post .store{font-size:12.5px;font-weight:500;color:var(--muted);margin-bottom:10px;letter-spacing:.04em}
+.gbp-post .body{font-size:14px;line-height:1.95}
+.gbp-post .photo{margin-top:14px;background:#f6f4ee;border:1px dashed var(--line);border-radius:6px;padding:18px;text-align:center;font-size:12.5px;color:var(--muted)}
+.review{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+.review .stars{color:var(--amber);font-size:13.5px;letter-spacing:3px;margin-bottom:8px}
+.review .said{font-size:14px}
+.review .reply{margin-top:16px;border-left:2px solid var(--green);padding:12px 0 12px 18px;background:#f8faf5;font-size:13.5px;line-height:1.95}
+.review .reply .from{font-size:11.5px;font-weight:500;color:var(--green-deep);margin-bottom:6px;letter-spacing:.04em}
+
+/* 料金（白カード） */
+.price-box{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--green);border-radius:10px;padding:38px 32px}
+.price-box h2{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:600;margin-bottom:24px;letter-spacing:.03em}
+.price-main{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price-main .num{font-family:'Noto Serif JP',serif;font-size:42px;font-weight:600;color:var(--green-deep);letter-spacing:.02em}
+.price-main .unit{font-size:15px;color:var(--ink)}
+.price-sub{margin-top:8px;font-size:13.5px;color:var(--muted)}
+.price-inc{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}
+.price-inc p{font-size:12.5px;color:var(--muted);margin-bottom:10px;font-weight:500;letter-spacing:.04em}
+.price-inc ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.price-inc li{font-size:13.5px;padding-left:20px;position:relative}
+.price-inc li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+@media(max-width:520px){.price-inc ul{grid-template-columns:1fr}}
+.safety{margin-top:24px;border-top:1px solid var(--line);padding-top:20px;font-size:13.5px;color:#3d463c}
+.safety b{color:var(--green-deep);font-weight:700}
+
+/* 流れ */
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:0 0 22px 46px;font-size:14.5px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--green);color:var(--green);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;background:#fff}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:14px;top:36px;bottom:4px;width:1px;background:var(--line)}
+.steps b{display:block;font-weight:700;color:var(--green-deep);font-size:14.5px}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:10px}
+summary{padding:16px 20px;font-size:14.5px;font-weight:500;cursor:pointer;list-style:none;position:relative;padding-right:44px;min-height:44px}
+summary::after{content:"＋";position:absolute;right:20px;top:14px;color:var(--muted);font-weight:400}
+details[open] summary::after{content:"−"}
+details .a{padding:0 20px 18px;font-size:14px;color:#3d463c}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(rgba(251,250,248,.92), rgba(251,250,248,.95)),
+    url('assets/hero.jpg') center 60%/cover no-repeat;
+  border:1px solid var(--line);border-radius:12px;padding:48px 32px;text-align:center;
+}
+.cta h2{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:600;margin-bottom:12px;letter-spacing:.03em}
+.cta p{font-size:14px;color:#4c5548;margin-bottom:24px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(251,250,248,.96);border-top:1px solid var(--line);padding:10px 16px;text-align:center;z-index:50}
+.sticky a{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:14.5px;padding:12px 30px;border-radius:6px;min-height:44px}
+
+footer{border-top:1px solid var(--line);padding:30px 0 22px;font-size:12.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1040px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Googleマップ運用代行</a>
+    <nav><a href="partner.html">制作会社の方はこちら</a></nav>
+  </div>
+</header>
+
+<div class="fv">
+  <div class="wrap">
+    <div class="kicker">店舗オーナーの方へ</div>
+    <h1>Googleマップ、<br>登録したまま止まっていませんか。</h1>
+    <p class="lead">投稿は最後にいつ更新しましたか。返していない口コミは何件ありますか。——思い当たるなら、それはオーナーの怠慢ではなく、本業をやりながら続けられる作業ではないだけです。そこを引き受けます。</p>
+    <p class="price-line">月35,000円。作業はすべてこちら。オーナー様は週1回の承認と、月1回のレポート確認だけです。</p>
+    <div class="cta-row">
+      <!-- 要設定: 相談フォームURL（Googleフォーム作成後に差し替え。送信→GAS→Discord＋メール通知） -->
+      <a class="btn" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">無料の現状チェックを申し込む</a>
+      <p class="micro">フォームは1分で終わります。店舗名を教えていただければ、プロフィールを拝見して「直すべき点」を2営業日以内にメールで返します。営業電話はしません。</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="plain">よくある状態</h2>
+    <ul class="pains">
+      <li>開店のときに登録して、それきり触っていない</li>
+      <li>口コミが来ても返せていない。低評価にはどう返せばいいか分からない</li>
+      <li>写真が開店時のまま。今のメニューと違う</li>
+      <li>「MEO対策やりませんか」の営業電話は来るが、何をされるのか分からず断っている</li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="redefine">
+      <h2>Googleマップは「登録するもの」ではなく「続けるもの」です</h2>
+      <p>Googleは、更新が続いているか・口コミに返しているか・情報が埋まっているかを見ています。一度きれいに設定しても、止まれば評価は下がっていきます。</p>
+      <p>つまり必要なのは「対策」という一発の作業ではなく、毎週の運用です。そして毎週の運用は、仕込みと接客のあいだにやれる作業ではありません。だから外に出す仕事です。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">毎月やること<small>すべて公開前にオーナー様の承認を通します。勝手な投稿は一切ありません。</small></h2>
+    <table class="jobs">
+      <tr><th>週次投稿</th><td>週1回、店の「いま」を投稿します。季節・キャンペーン・メニューに合わせて文面はこちらで作ります。</td></tr>
+      <tr><th>写真の掲載</th><td>お預かりした写真を計画的に掲載します。撮影のコツ（何をどう撮ればいいか）もお伝えします。</td></tr>
+      <tr><th>口コミ返信</th><td>新着の口コミすべてに返信文を作成します。低評価への返し方は、この仕事でいちばん神経を使う部分です。</td></tr>
+      <tr><th>情報の整備</th><td>カテゴリ・営業時間・説明文・商品/サービス欄を埋め、検索に引っかかる状態を作ります（初月に集中実施）。</td></tr>
+      <tr><th>月次レポート</th><td>表示回数・検索のされ方・電話タップなどを毎月1枚にまとめます。「やってる感」ではなく数字で報告します。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">実際の書きぶり</h2>
+    <p class="sample-note">※以下は架空の店舗を使ったサンプルです。守秘義務のため実際のお客様の投稿・口コミは掲載していませんが、書きぶりはこの通りです。</p>
+
+    <div class="gbp-post">
+      <div class="store">投稿サンプル（架空の整体院）</div>
+      <div class="body">デスクワークで肩と首がつらい方へ。平日16時までは比較的ご予約が取りやすくなっています。初回は姿勢のチェックから始めて、原因になっている筋肉を確認してから施術に入ります。「揉んでほしい場所」ではなく「原因の場所」にアプローチするのが当院のやり方です。</div>
+      <div class="photo">写真：施術風景（お客様からお預かりした実写真を使用）</div>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★☆☆☆</div>
+      <p class="said">「予約したのに30分近く待たされた。施術は良かったけど残念。」（架空の口コミ）</p>
+      <div class="reply">
+        <div class="from">オーナーからの返信（作成サンプル）</div>
+        ご予約いただいたにもかかわらず、長くお待たせしてしまい申し訳ございませんでした。当日は直前の施術が長引き、ご案内が遅れました。現在は予約枠の間隔を見直し、同じことが起きないよう改めています。施術についてのお言葉はスタッフの励みになります。次回お越しの際は、お待たせせずにご案内いたします。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="price-box">
+      <h2>料金</h2>
+      <div class="price-main"><span class="num">35,000</span><span class="unit">円 / 月（税込）</span></div>
+      <p class="price-sub">初期整備費 50,000円（初月のみ）。契約は1ヶ月単位で、縛りはありません。</p>
+      <div class="price-inc">
+        <p>月額に含まれるもの</p>
+        <ul>
+          <li>週1回の投稿（月4〜5本）</li>
+          <li>写真の掲載・管理</li>
+          <li>口コミ返信（全件）</li>
+          <li>月次レポート</li>
+          <li>情報のメンテナンス</li>
+          <li>メールでの相談</li>
+        </ul>
+      </div>
+      <div class="safety">
+        <b>お約束できないこと：</b>順位の保証はしません。順位を決めるのはGoogleだからです。かわりに「更新が続き、口コミに返り、情報が埋まっている状態」を毎週作り続けます。<br><br>
+        <b>お預かりしないもの：</b>アカウントの所有権はお客様のままです。当方は運用の権限だけをいただきます。解約されても、アカウントも口コミもすべてお客様に残ります。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">始めるまでの流れ</h2>
+    <ol class="steps">
+      <li><b>無料の現状チェック</b>フォームから店舗名を送ってください。プロフィールを拝見し、直すべき点を2営業日以内にメールで返します。この時点で料金は発生しません。</li>
+      <li><b>ご提案・お見積り</b>チェック結果をもとに、何をどの順でやるかをご提案します。合わなければ断ってください。しつこい営業はしません。</li>
+      <li><b>初期整備（初月）</b>カテゴリ・説明文・商品欄・写真を集中して整えます。ここで土台を作ります。</li>
+      <li><b>毎週の運用開始</b>投稿と口コミ返信が毎週回り始めます。オーナー様は公開前の承認だけお願いします。</li>
+      <li><b>月次レポート</b>毎月、数字とやったことを1枚で報告します。</li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">よくある質問</h2>
+    <details>
+      <summary>契約の縛りはありますか？</summary>
+      <div class="a">ありません。1ヶ月単位の契約で、やめたい月の前月末までにご連絡いただければ終了できます。運用は「続けたいから続ける」ものであるべきだと考えています。</div>
+    </details>
+    <details>
+      <summary>本当に順位は上がりますか？</summary>
+      <div class="a">保証はできません。順位を決めるのはGoogleです。ただ、更新が止まっている店と毎週動いている店のどちらをGoogleが評価するかは、Googleが公式に「情報の充実度・関連性」を要素として挙げています。その状態を作り続けるのが当方の仕事です。</div>
+    </details>
+    <details>
+      <summary>何を用意すればいいですか？</summary>
+      <div class="a">Googleビジネスプロフィールの管理権限の共有と、店内・メニューなどの写真だけです。写真はスマホで撮ったもので十分です。何をどう撮ればいいかはこちらからお伝えします。</div>
+    </details>
+    <details>
+      <summary>低評価の口コミも返信してくれますか？</summary>
+      <div class="a">返します。むしろ低評価こそ返すべきです。返信は他のお客様全員に見えるので、誠実に返している店は低評価すら信頼の材料になります。事実確認が必要な内容は、店舗様に確認してから返します。</div>
+    </details>
+    <details>
+      <summary>勝手に変な投稿をされないか不安です</summary>
+      <div class="a">公開前にすべてオーナー様の承認を通します。承認のない投稿は公開されません。加えて週1回、作成した本人とは別の視点で全投稿・全予約を検品する工程を入れています。</div>
+    </details>
+    <details>
+      <summary>どんな業種に対応していますか？</summary>
+      <div class="a">実店舗にお客様が来る業態全般です（飲食・美容・治療院・小売など）。なお、すでに運用中の店舗と同一エリア・同一業種のご依頼は、利益相反になるためお断りする場合があります。</div>
+    </details>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>まず、今の状態を知ることからです</h2>
+      <p>店舗名を送っていただくだけで、直すべき点を無料でお返しします。<br>その結果、依頼に至らなくてもまったく構いません。</p>
+      <!-- 要設定: 相談フォームURL -->
+      <a class="btn" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">無料の現状チェックを申し込む</a>
+      <p class="micro">フォームが開きます。店舗名・業種・エリアの3つだけで結構です。<br>フォームが使えない場合は <a href="mailto:rogerfederer0603@gmail.com?subject=【無料チェック希望】Googleマップ運用について">メール</a> でも受け付けています。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
+    <span><a href="index.html">トップ</a>　<a href="partner.html">制作会社・代理店の方</a></span>
+  </div>
+</footer>
+
+<div class="sticky">
+  <!-- 要設定: 相談フォームURL -->
+  <a href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">無料の現状チェックを申し込む</a>
+</div>
+
+</body>
+</html>

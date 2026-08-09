@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Googleマップ運用代行｜投稿・口コミ返信・月次レポートまで</title>
+<meta name="description" content="店舗のGoogleビジネスプロフィール運用を代行します。週次投稿・写真掲載・口コミ返信・月次レポートまで一気通貫。公開前の承認と別担当による検品で、事故のない運用を続けます。">
+<meta property="og:url" content="https://map-daiko.jp/">
+<link rel="canonical" href="https://map-daiko.jp/">
+<meta property="og:title" content="Googleマップ運用代行｜投稿・口コミ返信・月次レポートまで">
+<meta property="og:description" content="週次投稿・写真掲載・口コミ返信・月次レポート。公開前承認と検品つきのGoogleビジネスプロフィール運用代行。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Googleマップ運用代行（Googleビジネスプロフィール運用）",
+  "description": "店舗のGoogleビジネスプロフィール運用代行。週次投稿・写真掲載・口コミ返信・月次レポート。",
+  "areaServed": "JP",
+  "priceRange": "¥¥"
+}
+</script>
+<style>
+:root{
+  --ink:#252b26;
+  --green:#2f6647;
+  --green-deep:#234d35;
+  --amber:#b9762c;
+  --bg:#fbfaf8;
+  --card:#ffffff;
+  --line:#e7e3da;
+  --muted:#79806f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--bg);line-height:2;font-size:15.5px;font-weight:400}
+img{max-width:100%;height:auto}
+a{color:var(--green)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+section{padding:72px 0}
+
+/* header */
+header{position:absolute;top:0;left:0;right:0;z-index:10;padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1040px}
+.logo{font-family:'Noto Serif JP',serif;font-weight:600;font-size:15px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+header nav a{font-size:13px;text-decoration:none;color:#4c5548;margin-left:18px}
+
+/* FV: 薄い写真背景 */
+.fv{
+  background:
+    linear-gradient(rgba(251,250,248,.86), rgba(251,250,248,.93) 70%, var(--bg)),
+    url('assets/hero.jpg') center 28%/cover no-repeat;
+  padding:132px 0 84px;
+}
+.fv .wrap{max-width:1040px}
+.fv .kicker{font-size:13px;font-weight:500;letter-spacing:.14em;color:var(--green);margin-bottom:22px}
+.fv h1{font-family:'Noto Serif JP',serif;font-size:34px;font-weight:600;line-height:1.7;letter-spacing:.03em;max-width:21em}
+.fv .lead{margin-top:24px;font-size:15.5px;max-width:36em}
+.fv .fact{margin-top:16px;font-size:13px;color:var(--muted);letter-spacing:.02em}
+
+/* 入口2枚 */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;max-width:720px}
+.door{display:block;text-decoration:none;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:10px;padding:26px 24px;transition:box-shadow .2s,border-color .2s}
+.door:hover{border-color:var(--green);box-shadow:0 6px 24px rgba(35,77,53,.08)}
+.door .who{font-size:12px;font-weight:500;letter-spacing:.08em;color:var(--muted)}
+.door .say{font-family:'Noto Serif JP',serif;display:block;font-size:18px;font-weight:600;color:var(--ink);margin-top:8px;line-height:1.7}
+.door .go{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:500;color:var(--green)}
+@media(max-width:600px){.doors{grid-template-columns:1fr}.fv h1{font-size:26px}}
+
+/* 見出し */
+h2.plain{font-family:'Noto Serif JP',serif;font-size:23px;font-weight:600;line-height:1.7;letter-spacing:.03em;margin-bottom:30px}
+h2.plain small{display:block;font-family:'Noto Sans JP',sans-serif;font-size:12.5px;color:var(--muted);font-weight:400;margin-top:8px;letter-spacing:.02em}
+
+/* やること表 */
+.jobs{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+.jobs th,.jobs td{border-bottom:1px solid var(--line);padding:16px 18px;text-align:left;font-size:14.5px;vertical-align:top;font-weight:400}
+.jobs th{width:9.5em;font-weight:500;color:var(--green-deep);background:#f6f4ee;white-space:nowrap}
+.jobs tr:last-child th,.jobs tr:last-child td{border-bottom:none}
+
+/* 承認フロー（白カード・ベタ塗りなし） */
+.flow{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--green);border-radius:10px;padding:38px 32px}
+.flow h2{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:.03em}
+.flow .why{font-size:13.5px;color:var(--muted);margin-bottom:26px}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:0 0 20px 46px;font-size:14.5px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--green);color:var(--green);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;background:#fff}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:14px;top:36px;bottom:4px;width:1px;background:var(--line)}
+.steps b{color:var(--green-deep);font-weight:700}
+.flow .note{margin-top:6px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+
+/* 正直ポジション */
+.honest{border-left:3px solid var(--amber);background:var(--card);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 28px;border-radius:0 10px 10px 0}
+.honest h2{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;margin-bottom:14px;letter-spacing:.03em}
+.honest p{font-size:14.5px}
+.honest p+p{margin-top:10px}
+
+/* 担当 */
+.me{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px}
+.me p{font-size:14.5px}
+.me p+p{margin-top:10px}
+.me .name{font-family:'Noto Serif JP',serif;font-weight:600;font-size:15.5px;margin-bottom:10px;letter-spacing:.04em}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(rgba(251,250,248,.92), rgba(251,250,248,.95)),
+    url('assets/hero.jpg') center 60%/cover no-repeat;
+  border:1px solid var(--line);border-radius:12px;padding:48px 32px;text-align:center;
+}
+.cta h2{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:600;margin-bottom:12px;letter-spacing:.03em}
+.cta p{font-size:14px;color:#4c5548;margin-bottom:24px}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:15.5px;letter-spacing:.04em;padding:16px 40px;border-radius:6px;min-height:44px}
+.btn:hover{background:var(--green-deep)}
+.cta .micro{margin-top:14px;font-size:12.5px;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding:30px 0;font-size:12.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1040px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Googleマップ運用代行</a>
+    <nav>
+      <a href="tenpo.html">店舗の方</a>
+      <a href="partner.html">制作会社の方</a>
+    </nav>
+  </div>
+</header>
+
+<div class="fv">
+  <div class="wrap">
+    <div class="kicker">Googleビジネスプロフィール運用代行</div>
+    <h1>更新が止まったGoogleマップは、<br>静かに埋もれていきます。</h1>
+    <p class="lead">投稿・写真・口コミ返信・月次レポートまで、店舗のGoogleビジネスプロフィール運用をまるごと引き受けます。公開前にお客様の承認を通し、公開後は作った本人とは別の目で検品する。この2つを毎週続ける運用者です。</p>
+    <p class="fact">2025年9月から、代理店経由で10店舗以上の運用を継続しています。</p>
+
+    <div class="doors">
+      <a class="door" href="tenpo.html">
+        <span class="who">店舗オーナーの方</span>
+        <span class="say">登録したまま、<br>止まっていませんか。</span>
+        <span class="go">店舗向けのご案内 →</span>
+      </a>
+      <a class="door" href="partner.html">
+        <span class="who">Web制作会社・代理店の方</span>
+        <span class="say">納品後の「運用」、<br>引き取ります。</span>
+        <span class="go">パートナー向けのご案内 →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="plain">やることは4つ。毎週、止めずに。</h2>
+    <table class="jobs">
+      <tr><th>週次投稿</th><td>店舗の「いま」を週1回投稿します。季節・キャンペーン・メニューに合わせて文面を作り、事前にお客様の確認を通してから公開します。</td></tr>
+      <tr><th>写真の掲載</th><td>お預かりした写真を計画的に掲載します。開店時のまま止まっているプロフィールは、それだけで古い店に見えます。</td></tr>
+      <tr><th>口コミ返信</th><td>新着の口コミに返信文を作成します。低評価にこそ、店の姿勢が出ます。感情的にならず、事実を確認したうえで返します。</td></tr>
+      <tr><th>月次レポート</th><td>表示回数・検索経路・電話タップなどの数字を毎月まとめて報告します。「何をやって、どうなったか」が1枚で分かる形です。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="flow">
+      <h2>事故を防ぐ仕組みを先にお見せします</h2>
+      <p class="why">代行業の事故は「勝手に変なものが公開される」ことです。それが起きない工程を組んでいます。</p>
+      <ol class="steps">
+        <li><b>下書き作成</b> — 投稿・返信はまず下書きとして作ります。いきなり公開しません。</li>
+        <li><b>お客様の承認</b> — 公開前に内容を確認していただきます。確認は✅ひとつ、1分で済む形にします。</li>
+        <li><b>予約・公開</b> — 承認済みのものだけを予約登録し、決めた日時に公開します。</li>
+        <li><b>公開後チェック</b> — 配信されたか、表記は正しいかを当日に確認します。</li>
+        <li><b>週次の検品</b> — 週に一度、作った本人とは別の目で全店舗の予約・表記・重複を総ざらいします。</li>
+      </ol>
+      <p class="note">この工程は営業用の飾りではなく、いま実際の運用で毎週回しているものです。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="honest">
+      <h2>順位の保証はしません。</h2>
+      <p>順位を決めるのはGoogleです。「必ず上位表示」を約束する業者は、自分で決められないことを約束しています。</p>
+      <p>私が約束するのは、Googleが評価する状態——更新が続いている、口コミに返している、情報が埋まっている——を毎週作り続けることです。順位はその結果としてついてきます。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">運用しているのは、こういう人間です</h2>
+    <div class="me">
+      <p class="name">運用担当：遠藤大輝</p>
+      <p>2025年9月から、代理店の下請けとして10店舗以上のGoogleビジネスプロフィール運用を続けています。飲食・小売などの実店舗が対象です。</p>
+      <p>作業の大半は自分で組んだ仕組みで自動化し、人の目は「確認」と「判断」に集中させています。店舗が増えても、1店舗目と同じ精度で出せる理由はこれです。</p>
+      <p>守秘義務があるため、運用中の店舗名は公開していません。かわりに、投稿・口コミ返信・レポートの実際の書きぶりを、架空店舗のサンプルとして<a href="tenpo.html">店舗向け</a>・<a href="partner.html">パートナー向け</a>の各ページに載せています。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>まずは、どちらの方か教えてください</h2>
+      <p>店舗のオーナー様と、制作会社・代理店様では、ご案内する内容が違います。</p>
+      <a class="btn" href="tenpo.html">店舗オーナーの方はこちら</a>
+      <p class="micro"><a href="partner.html">Web制作会社・広告代理店の方はこちら →</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
+    <span><a href="tenpo.html">店舗向け</a>　<a href="partner.html">パートナー向け</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

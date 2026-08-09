@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>制作会社・代理店向け｜Googleビジネスプロフィール運用の外注パートナー</title>
+<meta name="description" content="Web制作会社・広告代理店様へ。納品後のGoogleビジネスプロフィール運用を、御社の名前のまま引き受けます。公開前の御社承認・別の目による検品・ホワイトラベルの月次レポート。1店舗のお試しから。">
+<meta property="og:title" content="Googleマップ運用代行">
+<meta property="og:url" content="https://map-daiko.jp/partner.html">
+<link rel="canonical" href="https://map-daiko.jp/partner.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#252b26;
+  --green:#2f6647;
+  --green-deep:#234d35;
+  --amber:#b9762c;
+  --bg:#fbfaf8;
+  --card:#ffffff;
+  --line:#e7e3da;
+  --muted:#79806f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--bg);line-height:2;font-size:15.5px;padding-bottom:78px}
+a{color:var(--green)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+section{padding:68px 0}
+
+header{position:absolute;top:0;left:0;right:0;z-index:10;padding:18px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1040px}
+.logo{font-family:'Noto Serif JP',serif;font-weight:600;font-size:15px;letter-spacing:.06em;color:var(--ink);text-decoration:none}
+header nav a{font-size:13px;text-decoration:none;color:#4c5548}
+
+.fv{
+  background:
+    linear-gradient(rgba(251,250,248,.88), rgba(251,250,248,.94) 70%, var(--bg)),
+    url('assets/hero.jpg') center 45%/cover no-repeat;
+  padding:128px 0 76px;
+}
+.fv .wrap{max-width:1040px}
+.fv .kicker{font-size:13px;font-weight:500;letter-spacing:.14em;color:var(--green);margin-bottom:22px}
+.fv h1{font-family:'Noto Serif JP',serif;font-size:32px;font-weight:600;line-height:1.7;letter-spacing:.03em}
+.fv .lead{margin-top:22px;font-size:15.5px;max-width:37em}
+.fv .cta-row{margin-top:30px}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:15.5px;letter-spacing:.04em;padding:16px 38px;border-radius:6px;min-height:44px}
+.btn:hover{background:var(--green-deep)}
+.micro{margin-top:12px;font-size:12.5px;color:var(--muted)}
+@media(max-width:600px){.fv h1{font-size:25px}}
+
+h2.plain{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:600;line-height:1.7;letter-spacing:.03em;margin-bottom:28px}
+h2.plain small{display:block;font-family:'Noto Sans JP',sans-serif;font-size:12.5px;color:var(--muted);font-weight:400;margin-top:8px}
+
+/* こんなとき */
+.cases{display:grid;gap:12px}
+.cases .c{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px 22px}
+.cases .c b{display:block;font-size:15px;font-weight:700;color:var(--green-deep);margin-bottom:4px}
+.cases .c p{font-size:13.5px;color:#3d463c}
+
+/* 宣言 */
+.pledge{border-left:3px solid var(--amber);background:var(--card);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px;border-radius:0 10px 10px 0}
+.pledge h2{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;margin-bottom:16px;letter-spacing:.03em}
+.pledge ul{list-style:none;display:grid;gap:16px}
+.pledge li{font-size:14.5px;padding-left:24px;position:relative}
+.pledge li::before{content:"";position:absolute;left:0;top:12px;width:10px;height:1.5px;background:var(--amber)}
+.pledge li b{display:block;font-weight:700;color:var(--green-deep)}
+.pledge li span{font-size:13.5px;color:#3d463c}
+
+/* 提供内容 */
+.jobs{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+.jobs th,.jobs td{border-bottom:1px solid var(--line);padding:16px 18px;text-align:left;font-size:14.5px;vertical-align:top}
+.jobs th{width:11em;font-weight:500;color:var(--green-deep);background:#f6f4ee;white-space:nowrap}
+.jobs tr:last-child th,.jobs tr:last-child td{border-bottom:none}
+.jobs b{font-weight:700;color:var(--green-deep)}
+
+/* 品質工程 */
+.flow{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--green);border-radius:10px;padding:36px 30px}
+.flow h2{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:.03em}
+.flow .why{font-size:13.5px;color:var(--muted);margin-bottom:24px}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:0 0 20px 46px;font-size:14.5px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--green);color:var(--green);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;background:#fff}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:14px;top:36px;bottom:4px;width:1px;background:var(--line)}
+.steps b{color:var(--green-deep);font-weight:700}
+
+/* サンプル */
+.gbp-post{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;max-width:500px}
+.gbp-post .store{font-size:12.5px;font-weight:500;color:var(--muted);margin-bottom:10px;letter-spacing:.04em}
+.gbp-post .body{font-size:14px;line-height:1.95}
+.report{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;max-width:560px}
+.report .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.report .head .t{font-size:13px;font-weight:700;color:var(--green-deep)}
+.report .head .logo-slot{font-size:11px;color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:2px 10px}
+.report table{width:100%;border-collapse:collapse}
+.report th,.report td{border-bottom:1px solid var(--line);padding:9px 10px;font-size:13px;text-align:left}
+.report th{color:var(--muted);font-weight:500;background:#f6f4ee}
+.report td.n{text-align:right;font-variant-numeric:tabular-nums}
+.report tr:last-child td{border-bottom:none}
+.report .foot{margin-top:12px;font-size:12px;color:var(--muted)}
+
+/* 受け方 */
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.terms .t{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px 22px}
+.terms .t b{display:block;font-size:14.5px;font-weight:700;color:var(--green-deep);margin-bottom:6px}
+.terms .t p{font-size:13.5px;color:#3d463c}
+@media(max-width:560px){.terms{grid-template-columns:1fr}}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:10px}
+summary{padding:16px 20px;font-size:14.5px;font-weight:500;cursor:pointer;list-style:none;position:relative;padding-right:44px;min-height:44px}
+summary::after{content:"＋";position:absolute;right:20px;top:14px;color:var(--muted);font-weight:400}
+details[open] summary::after{content:"−"}
+details .a{padding:0 20px 18px;font-size:14px;color:#3d463c}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(rgba(251,250,248,.92), rgba(251,250,248,.95)),
+    url('assets/hero.jpg') center 60%/cover no-repeat;
+  border:1px solid var(--line);border-radius:12px;padding:48px 32px;text-align:center;
+}
+.cta h2{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:600;margin-bottom:12px;letter-spacing:.03em}
+.cta p{font-size:14px;color:#4c5548;margin-bottom:24px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(251,250,248,.96);border-top:1px solid var(--line);padding:10px 16px;text-align:center;z-index:50}
+.sticky a{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:14.5px;padding:12px 30px;border-radius:6px;min-height:44px}
+
+footer{border-top:1px solid var(--line);padding:30px 0 22px;font-size:12.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1040px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Googleマップ運用代行</a>
+    <nav><a href="tenpo.html">店舗オーナーの方はこちら</a></nav>
+  </div>
+</header>
+
+<div class="fv">
+  <div class="wrap">
+    <div class="kicker">Web制作会社・広告代理店の方へ</div>
+    <h1>納品後の「運用」、<br>御社の名前のまま引き受けます。</h1>
+    <p class="lead">サイトは作った。Googleビジネスプロフィールも整えた。でも毎週の投稿と口コミ返信を回す人がいない——その部分だけを、御社の下請けとして引き受けます。クライアント様から見える名前は御社のままです。</p>
+    <div class="cta-row">
+      <!-- 要設定: 相談フォームURL（Googleフォーム作成後に差し替え。送信→GAS→Discord＋メール通知） -->
+      <a class="btn" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">条件を相談する（1店舗のお試しから）</a>
+      <p class="micro">フォームは1分で終わります。まずは1店舗からの小さなお試しで構いません。</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="plain">こういう状態に心当たりはありませんか</h2>
+    <div class="cases">
+      <div class="c"><b>制作は終わったが、運用の商品がない</b><p>「作って納品して終わり」になっていて、月額の継続収益が積み上がらない。MEO運用を商品にしたいが、社内に回す人がいない。</p></div>
+      <div class="c"><b>スポットで受けたMEOが、続かない</b><p>初期設定まではやったが、毎週の投稿・口コミ返信が数ヶ月で止まった。クライアントには「運用します」と言ってある。</p></div>
+      <div class="c"><b>担当者が抜けて、運用が宙に浮いた</b><p>属人でなんとか回していたが、退職・異動で止まった。品質がその人依存だったので、引き継げない。</p></div>
+      <div class="c"><b>店舗数が増えると、品質が落ちる</b><p>3店舗までは回ったが、10店舗になると誤投稿・返信漏れが出始めた。増やすほど怖くなる。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="pledge">
+      <h2>先に、3つお約束します</h2>
+      <ul>
+        <li><b>御社のクライアント様と直接契約しません。</b><span>引き抜きは一切しません。窓口も請求も御社のまま。当方は御社との下請け契約だけです。契約書に明記して構いません。</span></li>
+        <li><b>同一商圏・同一業種の競合は受けません。</b><span>受託時に商圏台帳と突き合わせ、御社クライアント様と競合する案件は他社からの依頼でもお断りします。</span></li>
+        <li><b>広告費・アカウントを預かりません。</b><span>アカウントはクライアント様名義のまま、運用権限のみで作業します。囲い込みが構造的にできない形です。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">引き受ける範囲<small>店舗ごとに範囲を選べます。全部でなくても構いません。</small></h2>
+    <table class="jobs">
+      <tr><th>週次投稿</th><td>店舗ごとの文面作成から予約公開まで。トーンの指定（御社のレギュレーション）があれば従います。</td></tr>
+      <tr><th>写真の掲載管理</th><td>お預かりした素材の計画的な掲載。掲載ペースの管理と在庫（未使用素材）の報告つき。</td></tr>
+      <tr><th>口コミ返信</th><td>新着口コミの返信文作成。低評価・クレーム系は事実確認を挟むフローで、御社経由で店舗に確認してから返します。</td></tr>
+      <tr><th>初期整備</th><td>カテゴリ・説明文・商品/サービス欄・属性の整備。納品直後の店舗の立ち上げにも使えます。</td></tr>
+      <tr><th>月次レポート</th><td>表示回数・検索経路・アクション数の月次まとめ。<b>御社のフォーマット・ロゴで納品できます</b>。そのままクライアント様に提出してください。</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">実際の書きぶり<small>※架空店舗のサンプルです。守秘義務のため実案件の内容は掲載していません。</small></h2>
+
+    <div class="gbp-post">
+      <div class="store">投稿サンプル（架空の美容室）</div>
+      <div class="body">梅雨の広がりやすい髪に、収まりを良くするカットと縮毛矯正のご相談が増えています。「クセを全部伸ばす」のではなく、扱いやすさを優先して必要な部分だけ矯正する提案もできます。仕上がりの好みは最初のカウンセリングでじっくり伺いますので、なりたいイメージの写真をお持ちいただけるとスムーズです。</div>
+    </div>
+
+    <div class="report">
+      <div class="head">
+        <span class="t">月次レポート（サンプル）</span>
+        <span class="logo-slot">御社ロゴ</span>
+      </div>
+      <table>
+        <tr><th>指標</th><th style="text-align:right">当月</th><th style="text-align:right">前月比</th></tr>
+        <tr><td>プロフィールの表示回数</td><td class="n">4,210</td><td class="n">+12%</td></tr>
+        <tr><td>検索での発見（一般ワード）</td><td class="n">1,830</td><td class="n">+18%</td></tr>
+        <tr><td>ルート検索</td><td class="n">96</td><td class="n">+9%</td></tr>
+        <tr><td>電話タップ</td><td class="n">41</td><td class="n">+5%</td></tr>
+      </table>
+      <p class="foot">※数値は架空のサンプルです。実際のレポートには当月の実施内容（投稿・写真・返信件数）と翌月の予定を添えます。この形のまま御社フォーマットに載せ替えて納品できます。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="flow">
+      <h2>「外注して事故らないか」への答え</h2>
+      <p class="why">外注がこわい理由は、クライアントの前で恥をかくことだと思います。だから品質の工程からお見せします。</p>
+      <ol class="steps">
+        <li><b>下書き作成</b> — 投稿・返信はすべて下書きから。いきなり公開しません。</li>
+        <li><b>御社の承認</b> — 公開前に御社（または店舗様直接、お好みの方で）の確認を通します。確認は一覧で済む形にします。</li>
+        <li><b>予約・公開</b> — 承認済みのものだけを予約登録。公開日時は計画表で共有します。</li>
+        <li><b>公開当日のチェック</b> — 配信されたか・表記は正しいかを当日に確認します。</li>
+        <li><b>週次の出口検品</b> — 週1回、作成者とは別の視点で全店舗の予約・表記・重複・画像を総ざらいします。</li>
+      </ol>
+      <p style="font-size:13.5px;color:var(--muted);margin-top:12px">作業の大半は自作の仕組みで自動化しており、人の目は確認と判断に集中しています。店舗数が増えても、品質と納期が最初の1店舗と変わらないのはこのためです。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">受け方・条件</h2>
+    <div class="terms">
+      <div class="t"><b>1店舗のお試しから</b><p>いきなり全店舗を任せる必要はありません。1店舗・1ヶ月で書きぶりと報告を見てから判断してください。</p></div>
+      <div class="t"><b>御社との下請け契約</b><p>業務委託契約＋秘密保持契約を締結します。御社のひな形でも、こちらで用意したものでも構いません。</p></div>
+      <div class="t"><b>料金は店舗数×範囲で個別見積</b><p>「口コミ返信だけ」「投稿だけ」の部分受託も可能です。まとまった店舗数はボリュームで調整します。</p></div>
+      <div class="t"><b>連絡はメール・チャットで完結</b><p>定例会議は必須にしません。週次の報告と月次のレポートで進捗が見える形にします。必要なときだけ打ち合わせを。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="plain">よくある質問</h2>
+    <details>
+      <summary>実績を教えてもらえますか？</summary>
+      <div class="a">2025年9月から、代理店経由で10店舗以上のGoogleビジネスプロフィール運用を継続しています。守秘義務のため店舗名は公開できませんが、お問い合わせいただければ、架空店舗を使った投稿・返信・レポートのサンプル一式をお送りします。書きぶりと報告の粒度はそれで判断いただけます。</div>
+    </details>
+    <details>
+      <summary>クライアントへの見せ方はどうなりますか？</summary>
+      <div class="a">御社の外注先として完全に裏方に回ります。レポートは御社ロゴ・御社フォーマットで納品できるので、御社の成果物としてそのまま提出できます。当方の名前がクライアント様に出ることはありません。</div>
+    </details>
+    <details>
+      <summary>何店舗まで受けられますか？</summary>
+      <div class="a">品質を保てる範囲でしかお受けしません。現在の受託状況によってお答えが変わるため、お問い合わせ時に正直にお伝えします。「受けたのに回らない」が一番の事故だと考えています。</div>
+    </details>
+    <details>
+      <summary>順位保証を求めるクライアントがいるのですが</summary>
+      <div class="a">順位保証はお受けできません。順位を決めるのはGoogleであり、保証をうたうこと自体がクライアント様への不誠実だと考えています。かわりに「毎週の更新・全件返信・情報の充実」という行動の報告で信頼を作る運用をご提案します。</div>
+    </details>
+    <details>
+      <summary>急にやめられたら困ります</summary>
+      <div class="a">終了する場合は1ヶ月前に通知し、引き継ぎ資料（投稿計画・文面ストック・運用メモ）を渡して終わります。属人化した状態で抜けるのは無責任だと考えているので、いつ引き継いでも回る形で運用します。</div>
+    </details>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>1店舗、試してみてください</h2>
+      <p>会社名と想定店舗数だけで結構です。サンプル一式と条件を折り返します。<br>条件が合わなければ、そのまま流してください。</p>
+      <!-- 要設定: 相談フォームURL -->
+      <a class="btn" href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">条件を相談する</a>
+      <p class="micro">2営業日以内に返信します。フォームが使えない場合は <a href="mailto:rogerfederer0603@gmail.com?subject=【パートナー相談】GBP運用の外注について">メール</a> でも受け付けています。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
+    <span><a href="index.html">トップ</a>　<a href="tenpo.html">店舗オーナーの方</a></span>
+  </div>
+</footer>
+
+<div class="sticky">
+  <!-- 要設定: 相談フォームURL -->
+  <a href="https://forms.gle/REPLACE_ME" target="_blank" rel="noopener">条件を相談する（1店舗から）</a>
+</div>
+
+</body>
+</html>
