@@ -83,6 +83,10 @@ footer .gnote{flex-basis:100%;font-size:14px}
   table.info th{border-bottom:none;padding:12px 16px 4px;background:transparent;font-size:14px}
   table.info td{border-bottom:none;padding:0 16px 14px}
 }
+
+header nav a{margin-left:18px}header nav a:first-child{margin-left:0}.nav-sp{display:none}
+@media(max-width:600px){header nav a{margin-left:12px;padding:12px 0}header nav a:first-child{margin-left:0}.nav-pc{display:none}.nav-sp{display:inline}}
+@media(max-width:360px){header .wrap{flex-wrap:wrap;row-gap:4px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5EWHL50"></script>
@@ -96,7 +100,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <header>
   <div class="wrap">
     <a class="logo" href="./">Googleマップ運用代行</a>
-    <nav><a class="nav-sub" href="tenpo.html">医院・お店の方</a><a href="partner.html">制作会社の方</a></nav>
+    <nav><a href="tenpo.html"><span class="nav-pc">医院・お店の方</span><span class="nav-sp">お店</span></a><a href="partner.html"><span class="nav-pc">制作会社の方</span><span class="nav-sp">制作会社</span></a><a href="agency.html"><span class="nav-pc">広告代理店の方</span><span class="nav-sp">代理店</span></a></nav>
   </div>
 </header>
 
@@ -134,7 +138,8 @@ footer .gnote{flex-basis:100%;font-size:14px}
   <ul>
     <li>お問い合わせへの回答、無料の現状チェックの結果の返送</li>
     <li>お見積り・ご提案の作成と連絡</li>
-    <li>お申し込みいただいたサービスの提供（Googleマップ運用代行、HPとAI検索の手直し、LINEの自動応対、SNSの投稿代行（Instagram）、Google広告の出稿のお手伝い）</li>
+    <li>お申し込みいただいたサービスの提供（Googleマップ運用代行、HPとAI検索の手直し、LINEの自動応対、SNSの投稿代行（Instagram）、Google広告の出稿のお手伝い、Meta広告（Instagram・Facebook広告）の出稿のお手伝い）</li>
+    <li>制作会社・広告代理店からの下請けのご依頼の実施（御社のお客様の店舗情報は、御社とのご契約の範囲でだけ取り扱います）</li>
     <li>請求および入金の確認</li>
     <li>サービス内容の改善、当サイトの改善</li>
     <li>法令にもとづく帳簿の作成・保存</li>
@@ -166,6 +171,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
         <tr><td>Google（Googleビジネスプロフィール）</td><td>運用代行の実施</td><td>店舗情報、写真、投稿・口コミ返信の内容</td></tr>
         <tr><td>LINEヤフー（LINE公式アカウント）</td><td>LINEの自動応対をご依頼いただいた場合の設定と運用</td><td>お店のLINE公式アカウントの設定内容、自動返信の文面、お店に届いたお問い合わせの内容</td></tr>
         <tr><td>Google（Google広告）</td><td>Google広告の出稿のお手伝いをご依頼いただいた場合の設定と運用</td><td>お店の広告アカウントの設定内容、広告文、キーワード、広告の成果の数字</td></tr>
+        <tr><td>Meta（Meta広告）</td><td>Meta広告（Instagram・Facebook広告）の出稿のお手伝いをご依頼いただいた場合の設定と運用</td><td>お店の広告アカウントの設定内容、広告の画像と文、配信する地域、広告の成果の数字</td></tr>
         <tr><td>Meta（Instagram・Meta Business Suite）</td><td>SNSの投稿代行（Instagram）をご依頼いただいた場合の投稿の予約と月次報告</td><td>お店のInstagramのアカウントの設定内容、投稿文、写真、投稿の閲覧数などの数字</td></tr>
         <tr><td>Google（Googleアナリティクス4）</td><td>アクセス解析</td><td>サイトの閲覧情報</td></tr>
         <tr><td>Microsoft（Clarity）</td><td>アクセス解析</td><td>サイトの閲覧情報、画面の操作記録</td></tr>
@@ -197,7 +203,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 
   <p class="updated">
     制定日：2026年8月30日<br>
-    最終改定日：2026年11月3日
+    最終改定日：2026年11月4日
   </p>
 </div>
 </main>
@@ -205,7 +211,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <footer>
   <div class="wrap">
     <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
-    <span><a href="./">トップ</a>　<a href="tenpo.html">店舗向け</a>　<a href="partner.html">パートナー向け</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
+    <span><a href="./">トップ</a>　<a href="tenpo.html">店舗向け</a>　<a href="partner.html">制作会社向け</a>　<a href="agency.html">広告代理店向け</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
     <span class="gnote"><a href="https://support.google.com/business/answer/7163406" target="_blank" rel="noopener">Googleの案内：サードパーティと連携してビジネス プロフィールを管理するためのヒント</a></span>
   </div>
 </footer>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>制作会社・代理店向け｜Googleビジネスプロフィール運用の外注パートナー</title>
-<meta name="description" content="Web制作会社・広告代理店様へ。納品後のGoogleビジネスプロフィール運用を、御社の名前のまま引き受けます。公開前の御社承認・承認済みの文との機械照合と目視の確認・ホワイトラベルの月次レポート。1店舗のお試しから。">
-<meta property="og:title" content="制作会社・代理店向け｜Googleマップ運用の外注パートナー">
+<title>制作会社向け｜Googleビジネスプロフィール運用の外注パートナー</title>
+<meta name="description" content="Web制作会社様へ。納品後のGoogleビジネスプロフィール運用を、御社の名前のまま1店舗 月9,800円（税込）で引き受けます。公開前の御社承認・承認済みの文との機械照合と目視の確認・御社ロゴの月次レポート。1店舗のお試しから。">
+<meta property="og:title" content="制作会社向け｜Googleマップ運用の外注パートナー">
 <meta property="og:description" content="納品後のGoogleビジネスプロフィール運用を、御社の名前のまま引き受けます。1店舗 月9,800円（税込）から。1店舗のお試しから。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://map-daiko.jp/partner.html">
@@ -22,20 +22,207 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Googleビジネスプロフィール運用の外注（制作会社・代理店向け）",
-  "serviceType": "Googleビジネスプロフィールの運用代行（下請け）",
-  "url": "https://map-daiko.jp/partner.html",
-  "description": "Web制作会社・広告代理店向け。週次投稿・写真の掲載・商品とサービスの登録・口コミ返信・情報の整備・月次レポートを、御社の名前のまま引き受けます。初期費用0円。",
-  "audience": {"@type": "BusinessAudience", "audienceType": "Web制作会社・広告代理店"},
-  "provider": {"@type": "Person", "name": "遠藤大輝", "url": "https://map-daiko.jp/"},
-  "offers": {
-    "@type": "Offer",
-    "price": "9800",
-    "priceCurrency": "JPY",
-    "priceSpecification": {"@type": "UnitPriceSpecification", "price": "9800", "priceCurrency": "JPY", "unitCode": "MON", "valueAddedTaxIncluded": true},
-    "url": "https://map-daiko.jp/partner.html"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://map-daiko.jp/#org",
+      "name": "Googleマップ運用代行",
+      "url": "https://map-daiko.jp/",
+      "logo": "https://map-daiko.jp/assets/apple-touch-icon.png",
+      "image": "https://map-daiko.jp/assets/og.png",
+      "description": "名古屋の医院・お店のGoogleビジネスプロフィール運用代行。週次投稿・写真掲載・口コミ返信・月次レポート。LINEの自動応対・Instagramの投稿代行・Google広告・Instagram/Facebook広告も受ける。制作会社・広告代理店の下請けも受ける。",
+      "email": "rogerfederer0603@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "名古屋市",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "愛知県"
+        }
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "遠藤大輝"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://map-daiko.jp/partner.html#service",
+      "name": "Googleビジネスプロフィール運用の外注（制作会社向け）",
+      "serviceType": "Googleビジネスプロフィールの運用代行（下請け）",
+      "url": "https://map-daiko.jp/partner.html",
+      "description": "Web制作会社向け。週次投稿・写真の掲載・商品とサービスの登録・口コミ返信・情報の整備・月次レポートを、御社の名前のまま引き受ける。初期費用0円。",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Web制作会社"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "名古屋市",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "愛知県"
+        }
+      },
+      "provider": {
+        "@id": "https://map-daiko.jp/#org"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "制作会社向けの料金（1店舗あたり・税込）",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/partner.html",
+            "price": "9800",
+            "priceCurrency": "JPY",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "1店舗・月額",
+                "price": "9800",
+                "priceCurrency": "JPY",
+                "unitCode": "MON",
+                "valueAddedTaxIncluded": true
+              },
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "初期設定",
+                "priceComponentType": "https://schema.org/ActivationFee",
+                "price": "0",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true
+              }
+            ],
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Googleマップ運用（下請け・一式）",
+              "serviceType": "Googleビジネスプロフィールの運用代行（下請け）",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/partner.html",
+            "price": "3500",
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "name": "1店舗・月額",
+              "price": "3500",
+              "priceCurrency": "JPY",
+              "unitCode": "MON",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Googleマップ運用（下請け・口コミ返信のみ）",
+              "serviceType": "Googleビジネスプロフィールの口コミ返信（下請け）",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/partner.html",
+            "price": "7000",
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "name": "1店舗・月額",
+              "price": "7000",
+              "priceCurrency": "JPY",
+              "unitCode": "MON",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Googleマップ運用（下請け・週次投稿と写真の掲載のみ）",
+              "serviceType": "Googleビジネスプロフィールの投稿と写真（下請け）",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" id="faq-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "実績を教えてもらえますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025年3月から、代理店経由でGoogleマップ（Googleビジネスプロフィール）の運用を担当しています。これまでに担当した店舗は10店舗以上です。その前に、大学生のとき2年ほどMEO代行の会社でアルバイトをしており、店舗の管理画面はそこから触っています。お問い合わせいただければ、架空の店を使った投稿・返信・レポートのサンプル一式をお送りします。書きぶりと報告の粒度はそれで判断いただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "クライアントへの見せ方はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "御社の外注先として、表には出ずに作業します。レポートは御社ロゴ・御社フォーマットで納品できるので、御社の成果物としてそのまま提出できます。当方の名前がクライアント様に出ることはありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "何店舗まで受けられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "品質を保てる範囲でしかお受けしません。現在の受託状況によってお答えが変わるため、お問い合わせ時に正直にお伝えします。「受けたのに毎週の投稿が出ない」状態を、一番起こしてはいけないことだと考えています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "順位保証を求めるクライアントがいるのですが",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "順位保証はお受けできません。順位を決めるのはGoogleであり、保証をうたうこと自体がクライアント様への不誠実だと考えています。かわりに「毎週の更新・全件返信・情報の充実」という行動の報告で信頼を作る運用をご提案します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "急にやめられたら困ります",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "終了する場合は1か月前に通知し、引き継ぎ資料（投稿計画・文面ストック・運用メモ）を渡して終わります。担当が抜けても困らないように、いつ引き継いでも次の担当がそのまま続けられる形（手順書と記録つき）で運用します。"
+      }
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,6 +354,10 @@ footer{border-top:1px solid var(--line);padding:30px 0 22px;font-size:14px;color
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1040px}
 footer a{color:var(--muted)}
 footer .gnote{flex-basis:100%;font-size:14px}
+
+header nav a{margin-left:18px}header nav a:first-child{margin-left:0}.nav-sp{display:none}
+@media(max-width:600px){header nav a{margin-left:12px;padding:12px 0}header nav a:first-child{margin-left:0}.nav-pc{display:none}.nav-sp{display:inline}}
+@media(max-width:360px){header .wrap{flex-wrap:wrap;row-gap:4px}}
 </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5EWHL50"></script>
@@ -180,26 +371,27 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <header>
   <div class="wrap">
     <a class="logo" href="./">Googleマップ運用代行</a>
-    <nav><a href="tenpo.html">医院・お店の方<span class="nav-long">はこちら</span></a></nav>
+    <nav><a href="tenpo.html"><span class="nav-pc">医院・お店の方</span><span class="nav-sp">お店</span></a><a href="partner.html" aria-current="page"><span class="nav-pc">制作会社の方</span><span class="nav-sp">制作会社</span></a><a href="agency.html"><span class="nav-pc">広告代理店の方</span><span class="nav-sp">代理店</span></a></nav>
   </div>
 </header>
 
 <div class="fv">
   <div class="wrap">
-    <div class="kicker">Web制作会社・広告代理店の方へ</div>
+    <div class="kicker">Web制作会社の方へ</div>
     <h1>納品後の「運用」、<br>御社の名前の<wbr>まま<wbr>引き受けます。</h1>
     <p class="lead">サイトは作った。Googleビジネスプロフィールも整えた。でも毎週の投稿と口コミ返信を書く人が社内にいない。その部分だけを、御社の下請けとして引き受けます。クライアント様から見える名前は御社のままです。</p>
     <div class="cta-row" id="fv-cta">
       
       <a class="btn" href="https://forms.gle/UBhyUxj9MVNNPKtt7" target="_blank" rel="noopener">条件を相談する（1店舗から）</a>
       <p class="micro">フォームは1分。まずは1店舗の小さなお試しから。</p>
+      <p class="micro">広告代理店の方で、Google広告・Instagram/Facebook広告・LINE・SNSもまとめて任せたい場合は <a href="agency.html">広告代理店向けのご案内</a> をご覧ください。</p>
     </div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2 class="plain">こういう状態に<wbr>心当たりは<wbr>ありませんか</h2>
+    <h2 class="plain">外注に<wbr>向いている<wbr>4つの場面</h2>
     <div class="cases">
       <div class="c"><b>制作は終わったが、運用の商品がない</b><p>「作って納品して終わり」になっていて、月額の継続収益が積み上がらない。MEO運用を商品にしたいが、毎週の作業を担当できる人が社内にいない。</p></div>
       <div class="c"><b>スポットで受けたMEOが、続かない</b><p>初期設定まではやったが、毎週の投稿・口コミ返信が、数か月で途切れた。クライアントには「運用します」と言ってある。</p></div>
@@ -238,7 +430,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 
 <section style="padding-top:0">
   <div class="wrap">
-    <h2 class="plain">投稿とレポートの見本<small>※架空店舗のサンプルです。守秘義務のため実案件の内容は掲載していません。</small></h2>
+    <h2 class="plain">投稿とレポートの見本<small>※架空の店の見本です。</small></h2>
 
     <div class="gbp-post">
       <div class="store">投稿サンプル（架空の美容室）</div>
@@ -296,7 +488,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
     <h2 class="plain">よくある質問</h2>
     <details>
       <summary>実績を教えてもらえますか？</summary>
-      <div class="a">2025年3月から、代理店経由でGoogleマップ（Googleビジネスプロフィール）の運用を担当しています。これまでに担当した店舗は10店舗以上です。その前に、大学生のとき2年ほどMEO代行の会社でアルバイトをしており、店舗の管理画面はそこから触っています。守秘義務のため店舗名は公開できませんが、お問い合わせいただければ、架空店舗を使った投稿・返信・レポートのサンプル一式をお送りします。書きぶりと報告の粒度はそれで判断いただけます。</div>
+      <div class="a">2025年3月から、代理店経由でGoogleマップ（Googleビジネスプロフィール）の運用を担当しています。これまでに担当した店舗は10店舗以上です。その前に、大学生のとき2年ほどMEO代行の会社でアルバイトをしており、店舗の管理画面はそこから触っています。お問い合わせいただければ、架空の店を使った投稿・返信・レポートのサンプル一式をお送りします。書きぶりと報告の粒度はそれで判断いただけます。</div>
     </details>
     <details>
       <summary>クライアントへの<wbr>見せ方は<wbr>どうなりますか？</summary>
@@ -332,7 +524,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <footer>
   <div class="wrap">
     <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
-    <span><a href="./">トップ</a>　<a href="tenpo.html">医院・お店の方</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
+    <span><a href="./">トップ</a>　<a href="tenpo.html">医院・お店の方</a>　<a href="agency.html">広告代理店の方</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
     <span class="gnote">背景写真：<a href="https://commons.wikimedia.org/wiki/File:%E6%B5%84%E5%BF%8301.jpg" target="_blank" rel="noopener">Nryate「浄心01」</a>（Wikimedia Commons／<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）を切り抜いて使用。切り抜いた画像も同じ CC BY-SA 4.0 で提供します</span>
     <span class="gnote"><a href="https://support.google.com/business/answer/7163406" target="_blank" rel="noopener">Googleの案内：サードパーティと連携してビジネス プロフィールを管理するためのヒント</a></span>
   </div>

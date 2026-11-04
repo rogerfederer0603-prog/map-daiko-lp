@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>名古屋の医院・お店のGoogleマップ運用代行｜月20,000円・初期費用0円・縛りなし</title>
-<meta name="description" content="名古屋の医院・お店のGoogleマップ、投稿が何か月も無い・口コミに返信していない状態になっていませんか。週次投稿・写真掲載・口コミ返信・月次レポートを月20,000円（税込）で代行します。初期費用は0円、契約は1か月単位で縛りはありません。承認のない投稿は公開しません。">
+<meta name="description" content="名古屋の医院・お店のGoogleマップの週次投稿・写真掲載・口コミ返信・月次レポートを、月20,000円（税込）で代行します。初期費用0円、1か月単位の契約です。投稿と返信は、お客様の承認を通してから公開します。LINEの自動応対・Instagramの投稿代行・Google広告・Instagram/Facebook広告も単品でお受けします。">
 <meta property="og:title" content="名古屋の医院・お店のGoogleマップ運用代行｜月20,000円・初期費用0円">
 <meta property="og:description" content="週次投稿・写真・口コミ返信・月次レポートを月20,000円（税込）で代行。初期費用0円、1か月単位で縛りなし。まずは無料の現状チェックから。">
 <meta property="og:type" content="website">
@@ -22,20 +22,352 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Googleマップ運用代行（医院・お店向け）",
-  "serviceType": "Googleビジネスプロフィールの運用代行",
-  "url": "https://map-daiko.jp/tenpo.html",
-  "description": "週次投稿・写真の掲載・商品とサービスの登録・口コミ返信・情報の整備・月1回の点検・月次レポート。初期費用0円、1か月単位の契約。",
-  "areaServed": {"@type": "City", "name": "名古屋市"},
-  "provider": {"@type": "Person", "name": "遠藤大輝", "url": "https://map-daiko.jp/"},
-  "offers": {
-    "@type": "Offer",
-    "price": "20000",
-    "priceCurrency": "JPY",
-    "priceSpecification": {"@type": "UnitPriceSpecification", "price": "20000", "priceCurrency": "JPY", "unitCode": "MON", "valueAddedTaxIncluded": true},
-    "url": "https://map-daiko.jp/tenpo.html"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://map-daiko.jp/#org",
+      "name": "Googleマップ運用代行",
+      "url": "https://map-daiko.jp/",
+      "logo": "https://map-daiko.jp/assets/apple-touch-icon.png",
+      "image": "https://map-daiko.jp/assets/og.png",
+      "description": "名古屋の医院・お店のGoogleビジネスプロフィール運用代行。週次投稿・写真掲載・口コミ返信・月次レポート。LINEの自動応対・Instagramの投稿代行・Google広告・Instagram/Facebook広告も受ける。制作会社・広告代理店の下請けも受ける。",
+      "email": "rogerfederer0603@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "名古屋市",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "愛知県"
+        }
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "遠藤大輝"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://map-daiko.jp/tenpo.html#service",
+      "name": "Googleマップ運用代行（医院・お店向け）",
+      "serviceType": "Googleビジネスプロフィールの運用代行",
+      "url": "https://map-daiko.jp/tenpo.html",
+      "description": "週次投稿・写真の掲載・商品とサービスの登録・口コミ返信・情報の整備・月1回の点検・月次レポート。初期費用0円、1か月単位の契約。",
+      "areaServed": {
+        "@type": "City",
+        "name": "名古屋市",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "愛知県"
+        }
+      },
+      "provider": {
+        "@id": "https://map-daiko.jp/#org"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://map-daiko.jp/tenpo.html",
+        "price": "20000",
+        "priceCurrency": "JPY",
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "月額",
+            "price": "20000",
+            "priceCurrency": "JPY",
+            "unitCode": "MON",
+            "valueAddedTaxIncluded": true
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "初期設定",
+            "priceComponentType": "https://schema.org/ActivationFee",
+            "price": "0",
+            "priceCurrency": "JPY",
+            "valueAddedTaxIncluded": true
+          }
+        ],
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Googleマップ運用代行",
+          "serviceType": "Googleビジネスプロフィールの運用代行",
+          "areaServed": {
+            "@type": "City",
+            "name": "名古屋市",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "愛知県"
+            }
+          },
+          "provider": {
+            "@id": "https://map-daiko.jp/#org"
+          }
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "一緒に頼めるもの・単品（税込）",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "5000",
+            "priceCurrency": "JPY",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "月の見直し",
+                "price": "5000",
+                "priceCurrency": "JPY",
+                "unitCode": "MON",
+                "valueAddedTaxIncluded": true
+              },
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "初期設定",
+                "priceComponentType": "https://schema.org/ActivationFee",
+                "price": "0",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true
+              }
+            ],
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LINEの自動応対",
+              "serviceType": "LINE公式アカウントの自動応答の設定と見直し",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "22000",
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "name": "月8本",
+              "price": "22000",
+              "priceCurrency": "JPY",
+              "unitCode": "MON",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SNSの投稿代行（Instagram・月8本）",
+              "serviceType": "Instagramの投稿代行",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "11000",
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "name": "月4本",
+              "price": "11000",
+              "priceCurrency": "JPY",
+              "unitCode": "MON",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SNSの投稿代行（Instagram・月4本）",
+              "serviceType": "Instagramの投稿代行",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "11000",
+            "priceCurrency": "JPY",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "月の運用（前月の広告費10万円まで）",
+                "price": "11000",
+                "priceCurrency": "JPY",
+                "unitCode": "MON",
+                "valueAddedTaxIncluded": true
+              },
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "初期設定",
+                "priceComponentType": "https://schema.org/ActivationFee",
+                "price": "22000",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true
+              }
+            ],
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google広告の出稿のお手伝い",
+              "serviceType": "Google広告の設定と運用",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "11000",
+            "priceCurrency": "JPY",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "月の運用（前月の広告費10万円まで）",
+                "price": "11000",
+                "priceCurrency": "JPY",
+                "unitCode": "MON",
+                "valueAddedTaxIncluded": true
+              },
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "初期設定",
+                "priceComponentType": "https://schema.org/ActivationFee",
+                "price": "22000",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true
+              }
+            ],
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Instagram・Facebook広告の出稿のお手伝い",
+              "serviceType": "Meta広告の設定と運用",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "22000",
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "name": "1回",
+              "price": "22000",
+              "priceCurrency": "JPY",
+              "valueAddedTaxIncluded": true
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI検索の準備",
+              "serviceType": "HPのAI検索向けの手直し",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "url": "https://map-daiko.jp/tenpo.html#addons",
+            "price": "3300",
+            "priceCurrency": "JPY",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "1本",
+                "price": "3300",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true,
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitText": "本"
+                }
+              },
+              {
+                "@type": "UnitPriceSpecification",
+                "name": "10本",
+                "price": "33000",
+                "priceCurrency": "JPY",
+                "valueAddedTaxIncluded": true,
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 10,
+                  "unitText": "本"
+                }
+              }
+            ],
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ページ・記事の手直し",
+              "serviceType": "HPの記事の手直し",
+              "areaServed": {
+                "@type": "City",
+                "name": "名古屋市",
+                "containedInPlace": {
+                  "@type": "State",
+                  "name": "愛知県"
+                }
+              },
+              "provider": {
+                "@id": "https://map-daiko.jp/#org"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json" id="faq-ld">
@@ -43,6 +375,30 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "マップの運用代行を頼まずに、LINEや広告だけ頼めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。LINEの自動応対・Instagramの投稿代行・Google広告・Instagram/Facebook広告は、どれも単品でお受けします。マップの運用代行とご一緒の場合は、それぞれの月額が20%引きになります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "医院でもLINEの自動返信は使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えます。医院・治療院ではAIを使わず、院長先生に確かめていただいた決まった文だけを、ボタンや言葉に合わせて返す形でお作りします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Google広告の広告費は、月いくらから始められますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目安は月20,000円からです（歯科は月30,000円から）。1か月で見直しに使えるクリックが100回ほど集まる額から始めます。広告費はお店からGoogleへ直接お支払いいただきます。"
+      }
+    },
     {
       "@type": "Question",
       "name": "契約の縛りはありますか？",
@@ -61,7 +417,7 @@
     },
     {
       "@type": "Question",
-      "name": "Google広告の初期設定の料金は、いつかかりますか？",
+      "name": "Google広告・Instagram/Facebook広告の初期設定の料金は、いつかかりますか？",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "広告を公開した日にご請求します。ご確認が届かないときや、公開の前におやめになるときの扱いは、特定商取引法に基づく表示にくわしく書いています。"
@@ -207,7 +563,7 @@ h2.plain small{display:block;font-family:'Noto Sans JP',sans-serif;font-size:14p
 .price-inc li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
 @media(max-width:520px){.price-inc ul{grid-template-columns:1fr}}
 /* ほかにお手伝いできること */
-.menu3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px}
+.menu3{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:26px}
 .menu3 .m{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--green);border-radius:10px;padding:20px 18px}
 .menu3 h3{font-family:'Noto Serif JP',serif;font-size:17px;font-weight:600;color:var(--green-deep);line-height:1.6;margin-bottom:8px}
 .menu3 p{font-size:14px;line-height:1.85}
@@ -269,6 +625,10 @@ footer{border-top:1px solid var(--line);padding:30px 0 22px;font-size:14px;color
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1040px}
 footer a{color:var(--muted)}
 footer .gnote{flex-basis:100%;font-size:14px}
+
+header nav a{margin-left:18px}header nav a:first-child{margin-left:0}.nav-sp{display:none}
+@media(max-width:600px){header nav a{margin-left:12px;padding:12px 0}header nav a:first-child{margin-left:0}.nav-pc{display:none}.nav-sp{display:inline}}
+@media(max-width:360px){header .wrap{flex-wrap:wrap;row-gap:4px}}
 </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5EWHL50"></script>
@@ -282,15 +642,15 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <header>
   <div class="wrap">
     <a class="logo" href="./">Googleマップ運用代行</a>
-    <nav><a href="partner.html">制作会社の方<span class="nav-long">はこちら</span></a></nav>
+    <nav><a href="tenpo.html" aria-current="page"><span class="nav-pc">医院・お店の方</span><span class="nav-sp">お店</span></a><a href="partner.html"><span class="nav-pc">制作会社の方</span><span class="nav-sp">制作会社</span></a><a href="agency.html"><span class="nav-pc">広告代理店の方</span><span class="nav-sp">代理店</span></a></nav>
   </div>
 </header>
 
 <div class="fv">
   <div class="wrap">
     <div class="kicker">名古屋の医院・お店の方へ</div>
-    <h1>Googleマップの<wbr>投稿が<wbr>何か月も無い。<br>口コミにも<wbr>返信していない。<br>そのままに<wbr>なっていませんか。</h1>
-    <p class="lead">投稿は最後に<wbr>いつ更新しましたか。<wbr>返していない口コミは<wbr>何件ありますか。<br>毎週の投稿と<wbr>口コミへの返信を、<wbr>名古屋の医院・お店から<wbr>引き受けます。</p>
+    <h1>Googleマップの<wbr>投稿が<wbr>何か月も無い。<br>口コミにも<wbr>返信していない。<br>その2つを、<wbr>毎週<wbr>引き受けます。</h1>
+    <p class="lead">最後の投稿の日付と、<wbr>返していない口コミの数は、<wbr>無料の現状チェックで<wbr>お伝えします。<br>毎週の投稿文と<wbr>口コミの返信文は<wbr>こちらで書き、<wbr>お客様の承認を<wbr>通してから出します。</p>
     <p class="price-line">月20,000円（税込）・初期費用0円。お客様にお願いするのは、週1回の承認と月1回のレポートの確認です。</p>
     <div class="cta-row" id="fv-cta">
       <a class="btn" href="https://forms.gle/UBhyUxj9MVNNPKtt7" target="_blank" rel="noopener">無料の現状チェックを申し込む</a>
@@ -339,7 +699,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <section style="padding-top:0">
   <div class="wrap">
     <h2 class="plain">投稿と口コミ返信の見本（架空の店）</h2>
-    <p class="sample-note">※以下は架空の店舗を使ったサンプルです。守秘義務のため実際のお客様の投稿・口コミは掲載していませんが、書きぶりはこの通りです。</p>
+    <p class="sample-note">※架空の店の見本です。</p>
 
     <div class="gbp-post">
       <div class="store">投稿サンプル（架空の整体院）</div>
@@ -381,7 +741,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
         </ul>
       </div>
       <div class="safety">
-        <b>お約束できないこと：</b>順位の保証はしません。順位を決めるのはGoogleだからです。かわりに「更新が続き、口コミに返り、情報が埋まっている状態」を毎週作り続けます。<br><br>
+        <b>お約束すること：</b>投稿が毎週出て、口コミに返信があり、情報が埋まっている状態を、毎週保ちます。順位はGoogleが決めるので、順位の動きは月次レポートでそのままお見せします。<br><br>
         <b>お預かりしないもの：</b>アカウントの所有権はお客様のままです。当方は運用の権限だけをお預かりします。解約されても、アカウントも口コミもすべてお客様に残ります。
       </div>
     </div>
@@ -412,7 +772,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <div class="m">
         <h3>LINEの自動応対</h3>
         <p>お店のLINE公式アカウントで、営業時間・場所・予約の取り方などの質問に自動で返します。</p>
-        <p class="yen">月5,000円（初期設定15,000円）</p>
+        <p class="yen">月5,000円（初期設定0円）</p>
         <p class="off">マップの運用代行とご一緒なら<br>月4,000円（1,000円引き）</p>
       </div>
       <div class="m">
@@ -424,7 +784,13 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <div class="m">
         <h3>Google広告の出稿のお手伝い</h3>
         <p>「西区 歯医者」のような検索に出す広告を設定し、月1回見直します。広告費はGoogleへ直接お支払いいただきます。</p>
-        <p class="yen">月11,000円（初期設定33,000円）</p>
+        <p class="yen">月11,000円（初期設定22,000円）</p>
+        <p class="off">マップの運用代行とご一緒なら<br>月8,800円（2,200円引き）</p>
+      </div>
+      <div class="m">
+        <h3>Instagram・Facebook広告の出稿のお手伝い</h3>
+        <p>お店の近くに住む方のInstagramとFacebookに出す広告を設定し、月1回見直します。広告費はMetaへ直接お支払いいただきます。</p>
+        <p class="yen">月11,000円（初期設定22,000円）</p>
         <p class="off">マップの運用代行とご一緒なら<br>月8,800円（2,200円引き）</p>
       </div>
     </div>
@@ -435,9 +801,9 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <div class="a">
       <p>お店のLINE公式アカウントに、よくある質問への自動返信を付けます。<br>営業時間・場所・駐車場・予約の取り方を、ボタン1つでご案内できます。<br>美容のお店では、LINEのAIが、お店で用意した答えの中から選んで返します。<br>医院・治療院では、AIを使わず、院長先生に確認していただいた文だけを返します。</p>
       <p>お申し込みフォームでは「お問い合わせへのAIの一次返信」をお選びください（医院・治療院も同じ選択肢です）。</p>
-      <p>初期設定15,000円、月の見直し5,000円（税込）です。マップの運用代行をご契約中のお店は、月の見直しが4,000円です。</p>
+      <p>初期設定は0円で、月の見直しが5,000円（税込）です。マップの運用代行をご契約中のお店は、月の見直しが4,000円です。</p>
       <p>美容のお店でAIの返信を使う場合は、LINEの有料プラン（チャットPro・月3,300円税込）を、お店からLINEヤフーへ別にお支払いいただきます。医院・治療院の定型文は追加費用がかかりません。</p>
-      <p>最初にご契約の3店（医院を含みます）は、初期設定が半額（7,500円）です（2026年12月28日のお申し込みまで）。</p>
+      <p>最初にご契約の3店（医院を含みます）は、料金をいただく最初の月の月額が、半額の2,500円です（マップの運用代行もご契約なら2,000円。2026年12月28日のお申し込みまで）。</p>
       </div>
     </details>
 
@@ -447,7 +813,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <p>Instagramの投稿も、同じ写真で代行できます。</p>
       <p>月8本 22,000円、月4本 11,000円（税込）です。初期費用は0円で、1か月単位の契約です。鍼灸院・接骨院は月4本です。</p>
       <p>Googleマップの運用代行もご契約なら、SNSの分は20%引きの17,600円です（月4本は8,800円）。</p>
-      <p>医院・歯科の投稿は、医療広告のガイドラインに沿って点検し、ご承認のあとにだけ出します。</p>
+      <p>医院・歯科の投稿は、医療広告のガイドラインに沿って点検し、ご承認のあとに出します。</p>
       <p>最初にご契約の3店（医院を含みます）は、初月の月額が半額です（月8本 11,000円・月4本 5,500円。2026年12月28日のお申し込みまで）。</p>
       <p>マップの運用代行もご契約で、先着の3店に入る場合の初月は、月8本 8,800円・月4本 4,400円です。</p>
       <p>マップの週1回の投稿は、Instagramの投稿とは別に数えます。</p>
@@ -457,11 +823,22 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <summary>Google広告の出稿のお手伝い：<wbr>くわしい中身</summary>
       <div class="a">
       <p>「西区 歯医者」のように検索した方に、医院やお店を広告として出す設定のお手伝い。<br>キーワード・地域・1日の予算の決め方から、月1回の見直しまで承ります。<br>広告費は医院・お店からGoogleへ直接お支払いいただく形です。</p>
-      <p>初期設定 33,000円（税込）・月の運用 11,000円（税込。マップの運用代行とご一緒なら8,800円）。月の運用は1か月単位の更新です。</p>
-      <p>最初にご契約の3店（医院を含みます）は、初期設定が半額（16,500円）です（2026年12月28日のお申し込みまで）。</p>
+      <p>初期設定 22,000円（税込）・月の運用 11,000円（税込。マップの運用代行とご一緒なら8,800円）。月の運用は1か月単位の更新です。</p>
+      <p>最初にご契約の3店（医院を含みます）は、初期設定が半額（11,000円）です（2026年12月28日のお申し込みまで）。</p>
       <p>前月の広告費（Googleからの請求額）が10万円を超えたお店は、月の運用が22,000円（マップの運用代行とご一緒なら17,600円）です。広告費が月30万円を超える運用はお受けしていません。</p>
       <p>医療機関の広告は、Googleの審査と医療広告ガイドラインに沿ってお作りします。鍼灸・接骨院は、あはき法・柔道整復師法の決まりに沿ってお作りします。美容医療の広告はお受けしていません。</p>
-      <p class="note"><a href="https://support.google.com/adspolicy/answer/9457109" target="_blank" rel="noopener">Google 広告の広告主様向けガイド（Googleのページ）</a>　当方はGoogleの認定パートナーではありません。</p>
+      <p class="note"><a href="https://support.google.com/adspolicy/answer/9457109" target="_blank" rel="noopener">Google 広告の広告主様向けガイド（Googleのページ）</a></p>
+      </div>
+    </details>
+    <details class="addon">
+      <summary>Instagram・Facebook広告の<wbr>出稿のお手伝い：<wbr>くわしい中身</summary>
+      <div class="a">
+      <p>お店の近くに住む方のInstagramとFacebookに、医院やお店を広告として出す設定のお手伝い。<br>配信する地域・年齢・予算の設定、お預かりした写真と広告の文の入稿、予約・電話・問い合わせの計測の設定から、月1回の見直しと毎月5日までの報告まで承ります。<br>医院では、Metaの決まりで計測できる範囲が狭まる場合があります。<br>広告費は医院・お店からMetaへ直接、お店のカードでお支払いいただく形です（当方は立て替えません）。</p>
+      <p>初期設定 22,000円（税込）・月の運用 11,000円（税込。マップの運用代行とご一緒なら8,800円）。月の運用は1か月単位の更新です。</p>
+      <p>最初にご契約の3店（医院を含みます）は、初期設定が半額（11,000円）です（2026年12月28日のお申し込みまで）。</p>
+      <p>前月の広告費（Metaからの請求額）が10万円を超えたお店は、月の運用が22,000円（マップの運用代行とご一緒なら17,600円）です。広告費が月30万円を超える運用はお受けしていません。</p>
+      <p>医療機関の広告は、Metaの審査と医療広告ガイドラインに沿ってお作りします。鍼灸・接骨院は、あはき法・柔道整復師法の決まりに沿ってお作りします。美容医療の広告はお受けしていません。</p>
+      <p class="note"><a href="https://transparency.meta.com/ja-jp/policies/ad-standards/" target="_blank" rel="noopener">Metaの広告スタンダード（Metaのページ）</a></p>
       </div>
     </details>
 
@@ -470,12 +847,12 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <p>紹介文・店の基本情報の記載・電話番号の載せ方・ページの一覧表など、AIや検索に読まれるための手直しです。</p>
       <dl>
         <dt>AI検索の準備</dt><dd>22,000円</dd>
-        <dt>ページ・記事の手直し</dt><dd>1本8,800円（同じ月に5本以上は1本7,700円）</dd>
+        <dt>ページ・記事の手直し</dt><dd>1本3,300円（10本で33,000円）</dd>
         <dt>スマホ表示の手直し</dt><dd>1か所5,500円</dd>
         <dt>HPのお知らせ記事</dt><dd>月2本11,000円（1か月ごとに更新）</dd>
         <dt>月1回の点検</dt><dd>月5,000円（Googleマップ運用代行には含みます）</dd>
       </dl>
-      <p class="note">AIの答えや検索の順位に名前が出ることのお約束はできません。</p>
+      <p>最初にご契約の3店（医院を含みます）は、ページ・記事の手直しの最初の10本を8,800円でお受けします（2026年12月28日のお申し込みまで）。</p>
     </div>
   </div>
 </section>
@@ -483,6 +860,18 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <section style="padding-top:0">
   <div class="wrap">
     <h2 class="plain">よくある質問</h2>
+    <details>
+      <summary>マップの運用代行を<wbr>頼まずに、<wbr>LINEや広告だけ<wbr>頼めますか？</summary>
+      <div class="a">はい。LINEの自動応対・Instagramの投稿代行・Google広告・Instagram/Facebook広告は、どれも単品でお受けします。マップの運用代行とご一緒の場合は、それぞれの月額が20%引きになります。</div>
+    </details>
+    <details>
+      <summary>医院でも<wbr>LINEの自動返信は<wbr>使えますか？</summary>
+      <div class="a">使えます。医院・治療院ではAIを使わず、院長先生に確かめていただいた決まった文だけを、ボタンや言葉に合わせて返す形でお作りします。</div>
+    </details>
+    <details>
+      <summary>Google広告の<wbr>広告費は、<wbr>月いくらから<wbr>始められますか？</summary>
+      <div class="a">目安は月20,000円からです（歯科は月30,000円から）。1か月で見直しに使えるクリックが100回ほど集まる額から始めます。広告費はお店からGoogleへ直接お支払いいただきます。</div>
+    </details>
     <details>
       <summary>契約の縛りはありますか？</summary>
       <div class="a">ありません（最低契約期間はありません）。1か月単位の契約で、やめる月の前月末までにご連絡いただければ、その月の末日で終わります。</div>
@@ -492,7 +881,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
       <div class="a">はい。ご連絡を受けてから7営業日以内の、お店が求める日に外します。その月の料金や解約との関係は、<a href="tokushoho.html">特定商取引法に基づく表示</a>にくわしく書いています。</div>
     </details>
     <details>
-      <summary>Google広告の<wbr>初期設定の料金は、<wbr>いつかかりますか？</summary>
+      <summary>Google広告・<wbr>Instagram/Facebook広告の<wbr>初期設定の料金は、<wbr>いつかかりますか？</summary>
       <div class="a">広告を公開した日にご請求します。ご確認が届かないときや、公開の前におやめになるときの扱いは、<a href="tokushoho.html">特定商取引法に基づく表示</a>にくわしく書いています。</div>
     </details>
     <details>
@@ -533,7 +922,7 @@ footer .gnote{flex-basis:100%;font-size:14px}
 <footer>
   <div class="wrap">
     <span>© 2026 Googleマップ運用代行（遠藤大輝）</span>
-    <span><a href="./">トップ</a>　<a href="partner.html">制作会社・代理店の方</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
+    <span><a href="./">トップ</a>　<a href="partner.html">制作会社の方</a>　<a href="agency.html">広告代理店の方</a>　<a href="privacy.html">プライバシーポリシー</a>　<a href="tokushoho.html">特定商取引法に基づく表示</a></span>
     <span class="gnote">背景写真：<a href="https://commons.wikimedia.org/wiki/File:%E6%B5%84%E5%BF%8301.jpg" target="_blank" rel="noopener">Nryate「浄心01」</a>（Wikimedia Commons／<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）を切り抜いて使用。切り抜いた画像も同じ CC BY-SA 4.0 で提供します</span>
     <span class="gnote"><a href="https://support.google.com/business/answer/7163406" target="_blank" rel="noopener">Googleの案内：サードパーティと連携してビジネス プロフィールを管理するためのヒント</a></span>
   </div>
